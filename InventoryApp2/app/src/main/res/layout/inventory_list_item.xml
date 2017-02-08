@@ -19,6 +19,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+
             <TextView
                 android:id="@+id/product_name"
                 android:layout_width="wrap_content"
@@ -26,28 +27,62 @@
                 android:text="ProductName"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
-            <TextView
-                android:id="@+id/quantity"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="quantity"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/price"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs:"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="price"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="Total:"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="#000000" />
+
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="quantity"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-        <Button
+       <Button
             android:id="@+id/sale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Sale" />
+            android:text="Sale"
+           android:focusable="false"/>
     </LinearLayout>
 
 

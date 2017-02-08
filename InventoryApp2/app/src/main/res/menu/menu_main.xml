@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.inventoryapp.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_delte"
         android:orderInCategory="100"
         android:title="DELETE"
         app:showAsAction="never" />
