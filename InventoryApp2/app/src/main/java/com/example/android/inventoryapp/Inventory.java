@@ -12,17 +12,17 @@ public class Inventory {
     private String mProductName;
     private String mQuantity;
     private String mPrice;
-    private Bitmap mImagepath;
+    private Blob mImage;
 
-    public Inventory(String productName, String quantity, String price,Bitmap image) {
+    public Inventory(String productName, String quantity, String price,Blob image) {
         mProductName = productName;
         mQuantity = quantity;
         mPrice = price;
-        mImagepath = image;
+        mImage = image;
     }
 
-    public Bitmap getmImage() {
-        return mImagepath;
+    public Blob getmImage() {
+        return mImage;
     }
 
     public String getmQuantity() {

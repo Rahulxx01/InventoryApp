@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Inventory App</string>
     <string name="action_settings">Settings</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="keep_editing">KEEP EDITING</string>
+    <string name="editor_delete_pet_failed">Deletion failed</string>
+    <string name="editor_delete_pet_successful">Deletion Successfull</string>
+    <string name="delete_dialog_msg">Delte this inventory</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
 </resources>

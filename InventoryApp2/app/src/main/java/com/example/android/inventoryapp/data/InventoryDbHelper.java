@@ -25,7 +25,8 @@ public class InventoryDbHelper extends SQLiteOpenHelper {
                 +InventoryContract.InventoryEntry._ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
                 +InventoryContract.InventoryEntry.COLUMN_PRODUCT_NAME+" TEXT NOT NULL,"
                 +InventoryContract.InventoryEntry.COLUMN_PRODUCT_QUANTITY+" INTEGER,"
-                +InventoryContract.InventoryEntry.COLUMN_PRODUCT_PRICE+" INTEGER);";
+                +InventoryContract.InventoryEntry.COLUMN_PRODUCT_PRICE+" INTEGER,"
+                + InventoryContract.InventoryEntry.COLUMN_PRODUCT_IMAGE+" BLOB);";
 
 
         sqLiteDatabase.execSQL(SQL_CREATE_INVENTORY_TABLE);

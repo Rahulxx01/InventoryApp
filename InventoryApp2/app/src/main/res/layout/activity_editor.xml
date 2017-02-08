@@ -23,9 +23,9 @@
 
             <ImageView
                 android:id="@+id/product_Image"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:src="@drawable/camera_image" />
 
         </LinearLayout>
@@ -58,15 +58,112 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Product Quantity :"
+                android:layout_weight="0"
+                android:text="User +/- quantity:"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
                 android:textColor="#000000" />
 
-            <EditText
-                android:id="@+id/edit_quantity_name"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/increaseBy"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Quantity" />
+                android:layout_weight="1"
+
+                android:text="+" />
+
+            <EditText
+                android:id="@+id/edit_increDec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/decreaseBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="-" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingTop="40dp"
+                    android:text="Quantity:"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/edit_quantity_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+            </LinearLayout>
+
+
+            <!--    <EditText
+                    android:id="@+id/edit_quantity_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+
+                    android:layout_weight="1"
+
+                    />-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -78,15 +175,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="32dp"
-                android:text="Price :"
+                android:text="Price"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs:"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
                 android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/edit_price_name"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Price" />
+                android:layout_weight="1"
+                android:hint="Price"
+                android:inputType="number" />
+
+
         </LinearLayout>
 
 
@@ -106,7 +214,7 @@
         <Button
             android:id="@+id/Delete"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Delete" />
 
     </LinearLayout>
